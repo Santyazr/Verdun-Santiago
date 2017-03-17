@@ -1,17 +1,17 @@
 from clases.N1 import Alumno
 from datetime import date
 
-a=Alumno()
-a.setNombre="Jorge"
+al=Alumno()
+al.setNombre="Jorge"
 
-a.setApellido="Sacarias"
+al.setApellido="Sacarias"
 
-a.setFecha=(date(2017,3,17))
+al.setFecha=(date(2017,3,17))
 
-a.agregarNota(7)
+al.agregarNota(7)
 
-a.agregarNota(8)
+al.agregarNota(8)
 
-print(a.Prom())
-print(a.maxNota())
-print(a.minNota())
+print(al.Prom())
+print(al.maxNota())
+print(al.minNota())
