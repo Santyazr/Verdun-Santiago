@@ -12,5 +12,6 @@ class Equipo (object):
     def mod_disp(self,d,t,a):
         self,disp[d][t]=bool(a)
 
+
     def capi(self,j):
         self.cap=str(j)
