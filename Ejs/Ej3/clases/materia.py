@@ -15,3 +15,4 @@ class Materia(object):
         if len(self.listaNotas)==0:
             return 0
         return sum(self.listaNotas)/len(self.listaNotas)
+
