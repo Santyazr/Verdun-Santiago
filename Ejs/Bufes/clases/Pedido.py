@@ -11,7 +11,7 @@ class Pedido(Alumno,Profesor):
     persona = None
     plato = None
     fech_deEntrega = None
-    entregado = None
+    entregado = False
     precio_pedido=None
 
 
@@ -23,16 +23,18 @@ class Pedido(Alumno,Profesor):
         self.plato=(pla)
         self.fech_deEntrega=(e)
 
-    def set_estado(self,bool):
-        self.entregado=bool
+    def terminado(self, f):
+        self.fech_creacion = (f)
 
-    def terminado(self,f):
-        self.fech_creacion=(f)
+    def set_estado(self):
+        self.entregado= True
+
+
 
     def eliminar_pedido(self,p):
         for item in Pedido
             if p == Pedido()
-            Pedido()==None
+            item.Pedido()==None
 
     def calc_Pedido(self,precioTotal_c):
         if desc is not None:
@@ -45,13 +47,11 @@ class Pedido(Alumno,Profesor):
     def modificacion(self, Nfech_deEntrega=None, Nplato=None, Nfecha_deEntrega=None, Nfech_creacion=None):
         for item in Pedido:
            if fech_deEntrega is not None:
-               self.date_of_creation = Nfech_deEntrega
+               item.fech_deEntrega = Nfech_deEntrega
            if plato is not None:
-               self.plato = Nplato
-           if fech_deEntrega is not None:
-               self.fech_deEntrega = Nfecha_deEntrega
+               item.plato = Nplato
            if fech_creacion is not None:
-               self.fech_creacion = Nfech_creacion
+               item.fech_creacion = Nfech_creacion
 
 
 

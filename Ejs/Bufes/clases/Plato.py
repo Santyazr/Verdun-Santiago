@@ -7,7 +7,12 @@ class Plato(object):
         self.nombre=(n)
         self.precio=(p)
 
+        f= open ("Platos.txt","w+")
+        for item in f:
+            f.write (item.nombre+"-----------*"+item.precio)
+            f.close()
+
     def eliminar_pla(self,p):
         for item in Plato:
-            if p == Pedido()
-            Pedido()==None
+            if p == Plato():
+               Plato()==None
