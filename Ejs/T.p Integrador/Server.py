@@ -6,6 +6,7 @@ class Empleado (object):
     telefono=None
     direccion=None
 
+
 Db=pymysql.connect (host="localhost",
                     user="alumno",
                     password="alumno",
@@ -19,3 +20,7 @@ direccion=input()
 c=Db.cursor()
 c.execute("insert into Empleados values('"+dni+"','"+nombre+"','"+apellido+"', '"+telefono+"', '"+direccion+"')" )
 Db.close()
+
+c.execute("delete from Empleados where dni="+dni+"+")
+
+c.execute("update from Empleados set dni="+dni+",nombre="+nombre+",apellido"+apellido+",telefono"""
